@@ -1,0 +1,131 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.protfolio-container{
+    min-height: 100;
+    width: 100%;
+    display: flex;
+}
+.navlist{
+   display: flex;
+   gap: 3.5rem;
+   
+   height: 15vh;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   width: 100%;
+ 
+}
+.navlist li{
+    list-style-type: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.right-container, .left-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+.left-container{
+    background-color: #006769;
+    width: 30%;
+   
+}
+.right-container{
+    background-color: #C0C78C;
+    width: 70%; 
+
+}
+.icons{
+    color: #BBB;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.7rem;
+    gap: 1rem;
+    padding: 1.5rem;
+    cursor: pointer;
+
+}
+.content{
+    margin: 3rem;
+}
+.content h1{
+    font-size: 4rem;
+    color: rgb(136, 130, 121);
+}
+.content h2{
+    font-size: 2rem;
+}
+.content h2 span{
+    color: rgb(136, 130, 121);
+}
+.content p{
+    font-size: 1.1rem;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+.btn-container button{
+    
+    font-size: 1.5rem;
+    padding: .8rem;
+    border-radius: .5REM;
+    background-color: transparent;
+    transition-duration: 5 ease;
+
+}
+button:nth-child(1){
+    cursor: pointer;
+    background-color: #BBB;
+    color: #006769;
+
+}
+button:nth-child(2){
+    margin-left: 1.5rem;
+    color: #006769;
+   
+}
+button:nth-child(2):hover{
+    cursor: pointer;
+    background-color: #BBB;
+    color: #006769;
+   
+
+}
+button:nth-child(1):hover{
+    background-color: transparent             ;
+
+}
+.icons{
+    cursor: pointer;
+    background: linear-gradient(#fff, #3877FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+   
+}
+.circle:nth-child(1){
+    background: linear-gradient(90deg, red), black;
+    width: 30rem;
+}
+.circle:nth-child(2){
+    background: white;
+    width: 25rem;
+    background-image: url("image/profile.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
